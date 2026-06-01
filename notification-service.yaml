@@ -1,2 +1,22 @@
 server:
   port: 5010
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME:airline-admin@gmail.com}
+    password: ${MAIL_APP_PASSWORD:pnrb gkyu brhr eexo}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+        debug: false
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML
+    cache: false
