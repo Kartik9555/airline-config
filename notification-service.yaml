@@ -20,3 +20,12 @@ spring:
     encoding: UTF-8
     mode: HTML
     cache: false
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: notification-service-group
+
+notification:
+  from-email: ${MAIL_FROM:airline-admin@gmail.com}
+  from-name: Airline Notification
+  checkin-url: "frontend url"
