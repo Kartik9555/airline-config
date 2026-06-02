@@ -27,6 +27,8 @@ spring:
           max-active: 8
           max-idle: 4
           min-idle: 1
+  cache:
+    type: redis
 eureka:
   instance:
     prefer-ip-address: true
