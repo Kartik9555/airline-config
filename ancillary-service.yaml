@@ -9,7 +9,6 @@ spring:
   sql:
     init:
       mode: ALWAYS
-      schema-locations: classpath:init-schema.sql
       platform: postgres
   jpa:
     open-in-view: false

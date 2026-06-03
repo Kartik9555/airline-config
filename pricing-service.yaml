@@ -8,8 +8,7 @@ spring:
     driver-class-name: org.postgresql.Driver
   sql:
     init:
-      mode: ALWAYS
-      schema-locations: classpath:init-schema.sql
+      mode: NEVER
       platform: postgres
   jpa:
     open-in-view: false
