@@ -24,6 +24,11 @@ spring:
     bootstrap-servers: localhost:9092
     consumer:
       group-id: notification-service-group
+  eureka:
+    client:
+      register-with-eureka: true
+    instance:
+      prefer-ip-address: true
 
 notification:
   from-email: ${MAIL_FROM:airline-admin@gmail.com}
