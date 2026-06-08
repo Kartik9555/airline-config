@@ -238,6 +238,11 @@ spring:
                     redis-rate-limiter.requestedTokens: 1
                     key-resolver: "#{@keyResolver}"
 
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty.http.client: DEBUG
+
 
 resilience4j:
   timelimiter:
