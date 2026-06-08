@@ -28,7 +28,8 @@ spring:
     client:
       register-with-eureka: true
     instance:
-      prefer-ip-address: true
+      prefer-ip-address: false
+      hostname: notification-service
 
 notification:
   from-email: ${MAIL_FROM:airline-admin@gmail.com}

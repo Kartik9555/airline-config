@@ -23,6 +23,7 @@ spring:
 
 eureka:
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: false
+    hostname: seat-service
   client:
     register-with-eureka: true

@@ -22,6 +22,7 @@ spring:
       group-id: booking-service-group
 eureka:
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: false
+    hostname: booking-service
   client:
     register-with-eureka: true

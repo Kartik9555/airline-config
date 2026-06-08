@@ -5,7 +5,8 @@ eureka:
   client:
     register-with-eureka: true
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: false
+    hostname: api-gateway
 
 spring:
   data:
