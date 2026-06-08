@@ -12,10 +12,11 @@ spring:
       platform: postgres
   jpa:
     open-in-view: false
-    show-sql: false
+    show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      ddl-auto: update
+      format_sql: true
+      generate_statistics: true
   data:
     redis:
       host: ${SPRING_DATA_REDIS_HOST:localhost}
@@ -35,3 +36,8 @@ eureka:
   instance:
     prefer-ip-address: false
     hostname: airline-core-service
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql: TRACE
