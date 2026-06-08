@@ -26,7 +26,7 @@ spring:
               filters:
                 - name: CircuitBreaker
                   args:
-                    name: auth-user-service-cb
+                    name: user-service-cb
                     fallbackUri: forward:/fallback
                 - name: RequestRateLimiter
                   args:
@@ -208,7 +208,7 @@ spring:
                 - Role=ROLE_SYSTEM_ADMIN
                 - name: CircuitBreaker
                   args:
-                    name: admin-location-service-cb
+                    name: location-service-cb
                     fallbackUri: forward:/fallback
                 - name: RequestRateLimiter
                   args:
@@ -228,7 +228,7 @@ spring:
                 - Role=ROLE_SYSTEM_ADMIN
                 - name: CircuitBreaker
                   args:
-                    name: admin-airline-core-service-cb
+                    name: airline-core-service-cb
                     fallbackUri: forward:/fallback
                 - name: RequestRateLimiter
                   args:
