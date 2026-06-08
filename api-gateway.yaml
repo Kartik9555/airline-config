@@ -52,7 +52,7 @@ spring:
                     redis-rate-limiter.replenishRate: 5
                     redis-rate-limiter.burstCapacity: 100
                     redis-rate-limiter.requestedTokens: 1
-                    key-resolver: "#{@userKeyResolver}"
+                    key-resolver: "#{@keyResolver}"
 
             # AIRLINE
             - id: airline-core-routes
@@ -70,7 +70,7 @@ spring:
                     redis-rate-limiter.replenishRate: 5
                     redis-rate-limiter.burstCapacity: 100
                     redis-rate-limiter.requestedTokens: 1
-                    key-resolver: "#{@userKeyResolver}"
+                    key-resolver: "#{@keyResolver}"
 
             # SEAT
             - id: seat-service-routes
@@ -88,7 +88,7 @@ spring:
                     redis-rate-limiter.replenishRate: 5
                     redis-rate-limiter.burstCapacity: 100
                     redis-rate-limiter.requestedTokens: 1
-                    key-resolver: "#{@userKeyResolver}"
+                    key-resolver: "#{@keyResolver}"
 
             # FLIGHT OPS
             - id: flight-ops-service-routes
@@ -106,7 +106,7 @@ spring:
                     redis-rate-limiter.replenishRate: 5
                     redis-rate-limiter.burstCapacity: 100
                     redis-rate-limiter.requestedTokens: 1
-                    key-resolver: "#{@userKeyResolver}"
+                    key-resolver: "#{@keyResolver}"
 
             # PRICING
             - id: pricing-service-routes
@@ -124,7 +124,7 @@ spring:
                     redis-rate-limiter.replenishRate: 5
                     redis-rate-limiter.burstCapacity: 100
                     redis-rate-limiter.requestedTokens: 1
-                    key-resolver: "#{@userKeyResolver}"
+                    key-resolver: "#{@keyResolver}"
 
             # ANCILLARY
             - id: ancillary-service-routes
@@ -142,7 +142,7 @@ spring:
                     redis-rate-limiter.replenishRate: 5
                     redis-rate-limiter.burstCapacity: 100
                     redis-rate-limiter.requestedTokens: 1
-                    key-resolver: "#{@userKeyResolver}"
+                    key-resolver: "#{@keyResolver}"
 
             # LOCATION
             - id: location-service-routes
@@ -160,7 +160,7 @@ spring:
                     redis-rate-limiter.replenishRate: 5
                     redis-rate-limiter.burstCapacity: 100
                     redis-rate-limiter.requestedTokens: 1
-                    key-resolver: "#{@userKeyResolver}"
+                    key-resolver: "#{@keyResolver}"
 
             # BOOKING
             - id: location-service-routes
@@ -178,7 +178,7 @@ spring:
                     redis-rate-limiter.replenishRate: 5
                     redis-rate-limiter.burstCapacity: 100
                     redis-rate-limiter.requestedTokens: 1
-                    key-resolver: "#{@userKeyResolver}"
+                    key-resolver: "#{@keyResolver}"
 
             # PAYMENT
             - id: payment-service-routes
@@ -196,7 +196,7 @@ spring:
                     redis-rate-limiter.replenishRate: 5
                     redis-rate-limiter.burstCapacity: 100
                     redis-rate-limiter.requestedTokens: 1
-                    key-resolver: "#{@userKeyResolver}"
+                    key-resolver: "#{@keyResolver}"
 
             # ADMIN CITY ROUTES
             - id: admin-location-routes
