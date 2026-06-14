@@ -178,7 +178,7 @@ spring:
             - id: payment-service-routes
               uri: lb://payment-service
               predicates:
-                - Path=/api/v1/payment/**
+                - Path=/api/v1/payments/**
               filters:
                 - name: CircuitBreaker
                   args:
